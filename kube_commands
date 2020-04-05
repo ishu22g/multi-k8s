@@ -1,0 +1,28 @@
+minikube start
+
+kubectl apply -f client-pod.yaml
+
+kubectl delete -f client-pod.yaml
+
+kubectl get pods
+kubectl get deployments
+
+minikube ip
+
+kubectl get pods -o wide
+kubectl describe pods
+
+kubectl set image deployment/client-deployment client=ishu22g/multi-client:v5
+
+kubectl log pod_name
+kubectl exec -it pod_name sh
+
+eval $(minikube docker-env)
+
+kubectl get all
+
+kubectl delete --all pods
+
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
+
+kubectl get storageclass
