@@ -24,5 +24,10 @@ kubectl get all
 kubectl delete --all pods
 
 kubectl create secret generic pgpassword --from-literal PGPASSWORD=12345asdf
+kubectl delete secret pgpassword
 
 kubectl get storageclass
+kubectl get pv
+kubectl get pvc
+
+minikube dashboard
