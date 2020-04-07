@@ -1,7 +1,9 @@
 docker run -it -v $(pwd):/app ruby:2.3 sh
 
-gem install travis -v 1.8.10
+gem install travis
 
-travis login --com
+travis login
 
-travis encrypt-file service-account.json -r ishu22g/multi-k8s --com
+cd app
+
+travis encrypt-file service-account.json -r ishu22g/multi-k8s
